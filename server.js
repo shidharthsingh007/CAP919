@@ -54,6 +54,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/updation', (req, res) => {
+  res.render('updation.hbs', {
+    pageTitle: 'UpDation'
+  });
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
